@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Bericap VLS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_active_docket_list">Active Docket List</string>
+    <string name="title_activity_docket_details">Worklist</string>
+    <string name="unloading_docket_details">Incoming Dockets</string>
+    <string name="incmng_docket_details">Incoming Docket Details</string>
+    <string name="title_activity_podcapture">POD Capture</string>
+    <string name="title_activity_changepassword">Change Password</string>
+    <string name="notification_activity">Notification</string>
+    <string name="str_no_records_found">No Records found !!!</string>
+    <string name="title_activity_docketsearch">Docket Search</string>
+    <string name="str_name">Enter part of Customer Name or Truck Number or Docket Number </string>
+    <string name="read_file">This app needs access to your file storage so that it can read files.</string>
+
+    <string name="active_dockets">Active Dockets</string>
+    <string name="recent_dockets">Recent Dockets</string>
+
+    //login activity
+    <string name="email">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="search_text">SEARCH</string>
+    <string name="forgotpassword_text">forgot password..?</string>
+    <string name="enter_email">Enter email id</string>
+    <string name="enter_password">Enter your password</string>
+
+    //validation message
+    <string name="emailid_empty_error_text">Username is Empty</string>
+    <string name="password_empty_error_text">Password is Empty</string>
+    <string name="confirm_password_empty_error_text">Confirm Password is Empty</string>
+    <string name="confirm_password_compare_error_text">Password does not match</string>
+
+    //Validation messages for Changepassword
+    <string name="oldpassword_empty_error_text">Old password is Empty</string>
+    <string name="Newpassword_empty_error_text">New password is Empty</string>
+    <string name="confirmpassword_empty_error_text">Confirm Password is Empty</string>
+    <string name="confirm_change_password_compare_error_text">Password does not match</string>
+
+
+    //Changepassword
+    <string name="submit">Submit</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    //Dialog message
+    <string name="ok_text">Ok</string>
+    <string name="alert_text">Alert</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+
+    //validation message
+    <string name="login_successfully_text">Login Successfully</string>
+    <string name="login_not_valid_text">Email-Password not valid</string>
+    <string name="sealone_text">Seal one No is mandatory</string>
+    <string name="sealtwo_text">Seal two No is mandatory</string>
+
+    //Docket detail activity
+    <string name="docket_no"> Docket No</string>
+    <string name="truck_no"> Truck No</string>
+    <string name="driver_name"> Driver Name</string>
+    <string name="customer_name"> Customer Name</string>
+    <string name="delivery_docket_no"> Delivery Doc.No:</string>
+    <string name="security_remarks">Security Remarks : </string>
+    <string name="Loading_team_remarks">Loading Team Remarks</string>
+
+</resources>

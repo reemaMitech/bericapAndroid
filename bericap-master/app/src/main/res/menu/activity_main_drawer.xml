@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_docketsearch"
+            android:icon="@drawable/ic_search_white"
+            android:title="Docket search"
+            android:theme="@style/NavigationTheme"
+            />
+        <item
+            android:id="@+id/nav_changepassword"
+            android:icon="@drawable/ic_changepassword"
+            android:title="Change password"
+            android:theme="@style/NavigationTheme"
+            />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_notification"
+            android:title="Notification"
+            android:theme="@style/NavigationTheme"/>
+        <!--<item-->
+            <!--android:id="@+id/nav_settings"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Settings"-->
+            <!--android:theme="@style/NavigationTheme"-->
+            <!--/>-->
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout1"
+            android:title="Logout"
+            android:theme="@style/NavigationTheme"
+            />
+    </group>
+</menu>

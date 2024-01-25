@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_color"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.ecs.offers.CustomClasses.CustomTextView
+                        style="@style/titlefont_textview_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="@string/toplistedpaymentoptions"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <com.ecs.offers.CustomClasses.CustomTextView
+                        style="@style/titlefont_textview_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/selectfromtoplistedbanklist_txt"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal">
+
+                        <GridView
+                            android:id="@+id/gv_top_listed_payment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:columnWidth="90dp"
+                            android:numColumns="2"
+                            android:verticalSpacing="10dp"
+                            android:horizontalSpacing="10dp"
+                            android:stretchMode="columnWidth"
+                            android:gravity="center">
+
+                        </GridView>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/paymentoption_spinner_selectbankname"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:entries="@array/select_bank_name"
+                android:layout_height="@dimen/_40sdp"
+                android:backgroundTint="@color/colorWhite"
+                android:textSize="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:id="@+id/ll_bottm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_select_card_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.ecs.offers.CustomClasses.CustomTextView
+                            style="@style/titlefont_textview_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:text="@string/selectcaedtype_txt"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:orientation="horizontal">
+
+                            <GridView
+                                android:id="@+id/gv_top_listed_card"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:columnWidth="90dp"
+                                android:numColumns="2"
+                                android:verticalSpacing="10dp"
+                                android:horizontalSpacing="10dp"
+                                android:stretchMode="columnWidth"
+                                android:gravity="center">
+
+                            </GridView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/paymentoption_spinner_selectcardtype"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:entries="@array/select_card_type"
+                    android:backgroundTint="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detailspay_option_btn_add"
+                style="@style/button_orange_bgstyle"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/ADD_txt" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

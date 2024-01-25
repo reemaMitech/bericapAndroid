@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include layout="@layout/custom_toolbar" />
+
+        <com.ecs.offers.CustomClasses.CustomTextView
+            style="@style/titlefont_textview_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Offers on Elctronic"
+            android:textSize="@dimen/_15sdp" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="@dimen/_10sdp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<GridView-->
+                <!--android:id="@+id/dashboard_gv_list"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="#33000000"-->
+                <!--android:columnWidth="90dp"-->
+                <!--android:gravity="center"-->
+                <!--android:horizontalSpacing="@dimen/_2sdp"-->
+                <!--android:numColumns="2"-->
+                <!--android:stretchMode="columnWidth"-->
+                <!--android:verticalSpacing="@dimen/_2sdp" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_custom_side_drawer"
+        app:itemIconTint="@color/colorPrimaryDark"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:menu="@menu/activity_custom_side_drawer_drawer" />
+
+
+
+</android.support.v4.widget.DrawerLayout>

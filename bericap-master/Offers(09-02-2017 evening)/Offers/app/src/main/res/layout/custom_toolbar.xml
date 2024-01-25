@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorWhite"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-50dp"
+            android:src="@drawable/ic_header_icon" />
+
+        <com.ecs.offers.CustomClasses.CustomTextView
+            android:id="@+id/toolbar_tv_signin"
+            style="@style/textview_orange_bgstyle"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/_9sdp"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/log_in_txt"
+            android:textSize="@dimen/_10sdp"/>
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>

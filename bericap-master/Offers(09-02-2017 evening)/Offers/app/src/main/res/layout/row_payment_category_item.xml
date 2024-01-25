@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="@dimen/_80sdp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlmain"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/icon_transperent"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center_vertical"
+            android:background="#33000000"
+            android:visibility="invisible"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/favourite"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_fevtick" />
+
+        <ImageView
+            android:id="@+id/compare"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/ic_comparetick" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/icon_transperent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="food"
+            android:textSize="@dimen/_7sdp"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlmain"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_7sdp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Cashback" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="UpTo 10%" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_7sdp"
+            android:text="ICCI Gold" />
+    </LinearLayout>
+
+</RelativeLayout>

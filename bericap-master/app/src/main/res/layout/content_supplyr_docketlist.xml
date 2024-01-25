@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Supply.SupplyrDashboardListingActivity">
+
+    <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+        android:id="@+id/content_doket_tv_activedocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/colorGreen"
+        android:gravity="center"
+        android:padding="@dimen/_4sdp"
+        android:text="Active Dockets"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_activedocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_doket_tv_activedocket"
+        android:layout_marginTop="0.1px"
+        android:orientation="horizontal">
+
+        <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="No Docket List"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_active_docketlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+        android:id="@+id/adl_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_activedocket"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/colorGreen"
+        android:gravity="center"
+        android:padding="@dimen/_4sdp"
+        android:text="Recent Dockets"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_recent_docket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adl_tv1"
+        android:layout_marginTop="0.1px"
+        android:orientation="horizontal">
+
+        <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+            android:id="@+id/tv_recent_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="No Docket Data"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recent_docketlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

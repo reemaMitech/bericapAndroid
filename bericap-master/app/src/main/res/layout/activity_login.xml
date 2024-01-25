@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <!--   Email Label -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/login_tv_welcometitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_bericap_logo" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <EditText
+                android:id="@+id/login_edt_emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:textColor="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!--  Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:textColor="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+        <!--  Password Label -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <com.example.admin.bericapdesign2.CustomClasses.CustomButton
+                android:id="@+id/login_btn_login"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@color/app_color"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <Button
+                android:id="@+id/login_btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:background="@color/app_color"
+                android:text="@string/cancel_text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.DocketDetailsActivity"
+    tools:showIn="@layout/activity_docket_details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#80042D84"
+                android:orientation="vertical">
+           <!-- <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="#80042D84"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">-->
+
+
+                <!-- Row 1 with single column -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                        android:id="@+id/docket_detail_tv_doketno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.8"
+                        android:background="#80042D84"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:text="@string/docket_no"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                        android:id="@+id/docket_detail_tv_doketno1"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#80042D84"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+                <!-- Row 2 with 3 columns -->
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="center_horizontal">
+
+                    <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                        android:id="@+id/docket_detail_tv_truckno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.8"
+                        android:background="#80042D84"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:text="@string/truck_no"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                        android:id="@+id/docket_detail_tv_truckno1"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#80042D84"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_15sdp" />
+                </LinearLayout>
+
+                <!-- Row 3 with 2 columns -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="center_horizontal">
+
+                    <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                        android:id="@+id/docket_detail_tv_drivername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.8"
+                        android:background="#80042D84"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:text="@string/driver_name"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                        android:id="@+id/docket_detail_tv_drivername1"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#80042D84"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="center_horizontal">
+
+                    <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                        android:id="@+id/docket_detail_tv_customername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:background="#80042D84"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:text="@string/customer_name"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                        android:id="@+id/docket_detail_tv_customername1"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#80042D84"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+        </LinearLayout>
+
+          <!--  </TableLayout>-->
+
+            <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                android:id="@+id/dd_btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:text="Photos"
+                android:textColor="@color/ColorBlack"
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="Pre-Load"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+
+                    />
+
+                <com.example.admin.bericapdesign2.CustomClasses.CustomButton
+                    android:id="@+id/capture_btn1"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/buttonshape"
+                    android:text="Capture"
+                    android:textAllCaps="false"
+                    android:textColor="#FF2121"
+                    android:textSize="@dimen/_15sdp"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/content_doket_ll_preload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/doketdetail_iv_capture"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_noimage" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <com.example.admin.bericapdesign2.CustomClasses.CustomButton
+                            android:id="@+id/docket_Detail_btn_preloadupload1"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:background="@color/app_color"
+                            android:paddingLeft="@dimen/_1sdp"
+                            android:paddingRight="@dimen/_1sdp"
+                            android:text="Upload"
+                            android:textAllCaps="false"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/_8sdp" />
+
+                        <com.example.admin.bericapdesign2.CustomClasses.CustomButton
+                            android:id="@+id/docket_Detail_btn_preloadclickagain1"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:background="@color/app_color"
+                            android:paddingLeft="@dimen/_1sdp"
+                            android:paddingRight="@dimen/_1sdp"
+                            android:text="Click Again"
+                            android:textAllCaps="false"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/_8sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+
+                <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                    android:id="@+id/docket_detail_tv_post_load_open_door"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="Post Load Open Door"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+
+                <com.example.admin.bericapdesign2.CustomClasses.CustomButton
+                    android:id="@+id/capture_btn2"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/buttonshape"
+                    android:text="Capture"
+                    android:textAllCaps="false"
+                    android:textColor="#FF2121"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <LinearLayout
+                    android:id="@+id/content_doket_ll_post_load_open_door"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/doketdetail_iv_capture2"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_gravity="center" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+
+                        <com.example.admin.bericapdesign2.CustomClasses.CustomButton
+                            android:id="@+id/docket_Detail_btn_post_load_open_door_clickagain2"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@color/app_color"
+                            android:text="Click Again "
+                            android:textAllCaps="false"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/_8sdp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                android:id="@+id/docketdetail_tv_seal_one_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="0.5"
+                android:text="Seal 1 No"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/docket_detail_edt_seal1_num"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="0.5"
+                android:background="@drawable/style_container"
+                android:hint="" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                android:id="@+id/docketdetail_tv_seal_two_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="0.5"
+                android:text="Seal 2 No"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/docket_detail_edt_seal2_num"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="0.5"
+                android:background="@drawable/style_container"
+                android:hint="" />
+              </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                    android:id="@+id/docket_detail_tv_post_load_closed_door"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="0.5"
+                    android:text="Post Load Closed Door"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+
+                <com.example.admin.bericapdesign2.CustomClasses.CustomButton
+                    android:id="@+id/capture_btn3"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/buttonshape"
+                    android:text="Capture"
+                    android:textAllCaps="false"
+                    android:textColor="#FF2121"
+                    android:textSize="@dimen/_15sdp" />
+
+                <LinearLayout
+                    android:id="@+id/content_doket_ll_post_load_closed_door"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/doketdetail_iv_capture3"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_gravity="center" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+
+                        <com.example.admin.bericapdesign2.CustomClasses.CustomButton
+                            android:id="@+id/docket_Detail_btn_post_load_closed_door_clickagain3"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@color/app_color"
+                            android:text="Click Again "
+                            android:textAllCaps="false"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/_8sdp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                    android:id="@+id/docket_details_tv_deliverydocno"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/delivery_docket_no"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/docket_detail_edt_deliverydocno"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/style_container"
+                    android:hint="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                    android:id="@+id/docket_details_tv_remarks"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="@string/security_remarks"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/docket_detail_edt_remarksdocno"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:background="@drawable/stylecolor_container"
+                    android:hint=""
+                    android:inputType="textMultiLine" />
+                <!--android:inputType="textCapSentences|textMultiLine"-->
+                <!--android:maxLines ="4"
+                 android:maxLength ="2000"-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+                    android:id="@+id/docket_details_tv_loadingteamremarks"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="@string/Loading_team_remarks"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/docket_detail_edt_remarkadd"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/style_container"
+                    android:hint="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.example.admin.bericapdesign2.CustomClasses.CustomButton
+                    android:id="@+id/submit_btn5"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/buttonshape"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Red"
+                    android:textSize="@dimen/_18sdp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

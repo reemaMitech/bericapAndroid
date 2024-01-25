@@ -1,0 +1,367 @@
+<resources>
+    <string name="app_name">Offers</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    //toolbar
+    <string name="sign_in_txt">Sign In</string>
+
+    //navigation item text
+    <string name="home_txt">Home</string>
+    <string name="changepassword_txt">Change Password</string>
+    <string name="logout_txt">Logout</string>
+    <string name="notification_txt">Notification</string>
+    <string name="aboutdetail_txt">About</string>
+    <string name="knowmore_txt">Know More</string>
+
+    //dashboard
+    <string name="search_text">What offers are you looking for?</string>
+    <string name="relevent_text">Not able to find the relavent offer?</string>
+    <string name="register_txt">REGISTER NOW</string>
+    <string name="movedeal_txt">Moves Deals &amp; Advertisement sliders</string>
+    <string name="viewall_txt">View all</string>
+    <string name="todaydeal_txt">Today\'s offers</string>
+    <string name="trendingdeals_txt">Trending Offers</string>
+    <string name="offers_categories_txt">Offers on Categories</string>
+    <string name="shoping_txt">Shoping</string>
+    <string name="hospitality_txt">Hospitality</string>
+    <string name="travel_txt">Travel</string>
+    <string name="big_deals_big_offers_txt">Big Deal - Big Offers</string>
+    <string name="fliter_options_by_payment_txt">Filter offers by payment options! </string>
+    <string name="cashback_txt">CASHBACK</string>
+    <string name="discount_txt">DISCOUNT</string>
+    <string name="icci_gold_txt">ICICI GOLD</string>
+    <string name="sbi_silver_txt">SBI SILVER</string>
+    <string name="hdfc_gold_txt">HDFC GOLD</string>
+
+    <string name="offers_by_category_txt">Offers By Category...</string>
+    <string name="app_vector_txt">Are you looking for app vectors</string>
+    <string name="best_offer_txt">Are you looking for Best offers!</string>
+    <string name="know_more_txt">Know More</string>
+
+    //payment
+    <string name="payment_offers_txt">Offers On Payments...</string>
+
+    //login
+    <string name="login_txt">Login</string>
+    <string name="email_txt">Email Id</string>
+    <string name="or_txt">OR</string>
+    <string name="cancel_txt">Cancel</string>
+    <string name="password_txt">Password</string>
+    <string name="log_in_txt">LOG IN</string>
+    <string name="forgotpassword_txt">Forgot Password?</string>
+    <string name="create_new_acc_txt">Create a New Account</string>
+
+    //Register
+    <string name="firstname_txt">First Name</string>
+    <string name="enter_firstname_txt">Enter First Name</string>
+    <string name="lastname_txt">Last Name</string>
+    <string name="enter_lastname_txt">Enter Last Name</string>
+    <string name="mobileno_txt">Mobile No</string>
+    <string name="enter_mobileno_txt">Enter Mobile No.</string>
+    <string name="emailaddres_txt">Email Address</string>
+    <string name="enter_emailaddress_txt">Enter Email Address</string>
+    <string name="basecity_txt">Base City</string>
+    <string name="enter_basecity_txt">Select Base City</string>
+    <string name="createpassword_txt">Create Password</string>
+    <string name="enter_createpassword_txt">Create Your Password</string>
+    <string name="confirmpassword_txt">Confirm Password</string>
+    <string name="enter_confirmpassword_txt">Confirm Your Password</string>
+    <string name="mobile_otp">Mobile Otp</string>
+    <string name="enter_mobileotp_txt">Enter Otp that you have received</string>
+
+    //Forgot password
+    <string name="forgotpassword_txt_title">Forgot Password</string>
+    <string name="enter_reg_mobileno">Enter Registered Mobile No.</string>
+    <string name="enter_reg_email_Address">Enter Registered Email Address</string>
+    <string name="retrive_password">Retrive Password</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="create_new_password">Create New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="submit_txt">Submit</string>
+
+    //Change password
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Passord</string>
+    <string name="change_txt">Change</string>
+
+    //About
+    <string name="about_txt">About me</string>
+    <string name="my_family_txt">My Family</string>
+    <string name="save_update_txt">Save / Update</string>
+    <string name="full_name_txt">Full Name</string>
+    <string name="ednter_pincode_txt">Enter PIN Code</string>
+    <string name="mobile_no_txt">Mobile No.*</string>
+    <string name="alternet_mobile_notxt">Alternet Mobile No.*</string>
+    <string name="dob_txt">DOB.* DD/MM</string>
+    <string name="anniversary_dob_txt">Anniversary DD/MM</string>
+    <string name="provider_bank_txt">Provider Bank</string>
+    <string name="Emailaddress_txt">Email Address</string>
+
+    //sub category
+    <string name="best_deal_for_shoping_txt">Best Deals For Shoping</string>
+    <string name="trending_deal_for_shoping_txt">Trending Deals For Shoping</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Welcome!</string>
+    <string name="slide_1_desc">Best discounts on every single service we offer!!</string>
+
+    <string name="slide_2_title">Choose Genie</string>
+    <string name="slide_2_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Best discounts on every single service we offer!</string>
+
+
+    //Add payment options
+    <string name="payment_options">Offers By Payment Option</string>
+
+
+    <string-array name="select_bank_name">
+        <item>Select Bank Name</item>
+        <item>HDFC Bank</item>
+        <item>ICICI Bank</item>
+        <item>State Bank</item>
+        <item>Axis Bank</item>
+        <item>IDBI Bank</item>
+        <item>CITY Bank</item>
+    </string-array>
+
+    <string-array name="select_card_type">
+        <item>Select Card Type</item>
+        <item>Signature</item>
+        <item>AllMilles</item>
+        <item>Superia</item>
+        <item>Business MoneyBack</item>
+        <item>Solataire</item>
+        <item>Jet Privilages</item>
+    </string-array>
+
+    <string name="add_txt">Add</string>
+    <string name="select_payment_options">Select Payment Option</string>
+
+    //Compare offers
+    <string name="compare_offers_txt">Compare offers</string>
+    <string name="show_txt">Show</string>
+
+    // Activity Add paymentoption
+    <string name="addpaymentoption_txt">Add Payment Option</string>
+    <string name="hdfc_txt">HDFC</string>
+    <string name="corol_txt">Coral</string>
+    <string name="selectedpaymentoptions_txt">Selected Payment Options</string>
+    <string name="toavailbestofferlinkedwithyour_txt">To avail best offer with your organization,
+        click here ...</string>
+    <string name="debitcard1_txt">HDFC Bank Coral Debit Card</string>
+    <string name="debitcard2_txt">ICICI Bank Gold Credit Card</string>
+    <string name="debitcard3_txt">State Bank MoneyBack Credit Card</string>
+    <string-array name="addpaymentoption">
+        <item>Select Card Type</item>
+        <item>credit card</item>
+        <item>Credit card</item>
+        <item>deditcard</item>
+        <item>Dedit card</item>
+    </string-array>
+
+    // Activity Aboutdetail next
+    <string name="gold_txt">Gold</string>
+    <string name="icici_txt">ICICI</string>
+    <string name="creditcard2_txt">1) Credit Card</string>
+    <string name="myorgdetails_txt">My Orgnizational Details (optional)</string>
+    <string name="nameoforg_txt">Name of Organization</string>
+    <string name="address_txt">Address</string>
+    <string name="website_txt">Website</string>
+    <string name="officeemail_txt">Office Email</string>
+    <string name="degination_txt">Designation</string>
+    <string name="workphone_txt">Work phone</string>
+    <string name="saveupdate_txt">Save/Update</string>
+    <string name="share_using">Share Via</string>
+
+
+    //Reviews and ratings
+    <string name="reviews_ratings">Reviews And Ratings</string>
+    <string name="desc1">Quick service and great information from technician.It was a stress free experience.Everything was done properly.Although it took some time.I m very much pleasedwith the way they handled....</string>
+
+    //splash
+    <string name="welcome_txt">Welcome</string>
+    <string name="splash_content_txt">Treasure of existing offers \n waiting for you...!!!</string>
+    <string name="splash_subcontent_txt">Add filters to get relevant offers..!!!</string>
+
+    //Personal information
+    <string name="personal_txt">Personal Information</string>
+    <string name="my_info_txt">My Information</string>
+    <string name="tellus_about_txt">Tell Us About You...</string>
+    <string name="enter_name_txt">Enter Your Name...</string>
+    <string name="enter_your_dom_txt">Enter Your DOB(dd:mm)...</string>
+    <string name="enter_your_anniversary">Enter Your Anniversary(dd:mm)</string>
+    <string name="enter_your_mobilenotxt">Enter Your Mobile No...</string>
+    <string name="enter_your_alternate_mobileno">Enter Your Alternate No...</string>
+    <string name="enter_your_emailid">Enter Your E-mail Id...</string>
+    <string name="enter_your_address">Enter Your Address...</string>
+    <string name="enter_your_city">Enter Your BaseCity...</string>
+    <string name="enter_your_pincode">Enter Your Pincode...</string>
+
+    <string name="my_payment_txt">My Payment Details</string>
+    <string name="tellus_mypayment_txt">Tell Us About Payment Options...</string>
+    <string name="enter_bank_name">Enter Bank Name...</string>
+    <string name="provider_txt">Provider Bank...</string>
+    <string name="coral_txt">Coral...</string>
+
+    <string name="my_organization_txt">My Organization Details</string>
+    <string name="tellus_organization_txt">Tell Us About Your Organizations...</string>
+    <string name="enter_organization_txt">Enter Organization Name...</string>
+    <string name="position_txt">Designation...</string>
+    <string name="other_txt">Other...</string>
+    <string name="save_txt">Save</string>
+    <string name="update_txt">Update</string>
+    <string name="software_txt">Esds Software Solutions   As   AndroidDeveloper</string>
+
+    <string name="add_paymentoption">Add Your Payment Options</string>
+    <string name="select_detail_txt">Select From List or enter your details...</string>
+    <string name="my_paymentlist_txt">My Payment List</string>
+    <string name="my_paymentlist_detail_txt">List Of Your added payment options.</string>
+    <string name="view_more_txt"><u>View more</u></string>
+
+    //payment
+    <string name="payment__txt">My Payment List</string>
+    <string name="payment__list_txt">List of your added payment options</string>
+    <string name="credit_txt">Credit Card</string>
+    <string name="debit_txt">Debit Card</string>
+    <string name="ewallet_txt">E-Wallet</string>
+    <string name="netbanking_txt">NetBanking</string>
+
+    //Popup Offer Details
+    <string name="offer_text">We are happy that you found the offer you are looking for...!</string>
+    <string name="offer_select_text">Would you like to save the selected payment options...?</string>
+    <string name="btn_sure_txt">Sure</string>
+    <string name="btn_nothanks_txt">No Thanks</string>
+    <string name="and_or_txt">And/Or</string>
+    <string name="register_text">Register</string>
+    <string name="thankyou_txt">Thank You...!</string>
+    <string name="inform_text">We will get back to you soon to complete your profile.</string>
+
+    // Activity select payment options
+    <string name="selectpaymentoptions">Select Payment Options</string>
+    <string name="enter_emailid_txt">Enter Email ID</string>
+    <string name="enter_display_emailid_txt">vishal.ecstech@gmail.com</string>
+    <string name="enter_display_mobileno_txt">8149962733</string>
+
+    // Popup select payment options
+    <string name="toplistedpaymentoptions">Top Listed Payment Options</string>
+    <string name="selectfromtoplistedbanklist_txt">Select from top listed bank list.</string>
+    <string name="axiscbank_txt">Axis Bank</string>
+    <string name="hdfcbank_txt">HDFC Bank</string>
+    <string name="icicibank_txt">ICICI Bank</string>
+    <string name="statebank_txt">State Bank</string>
+    <string name="idbibank_txt">IDBI Bank</string>
+    <string name="citybank_txt">CITY Bank</string>
+    <string name="selectcaedtype_txt">Select card type</string>
+    <string name="ADD_txt">ADD</string>
+    <string name="signature_txt">Signature</string>
+    <string name="allmilles_txt">AllMilles</string>
+    <string name="superia_txt">Superia</string>
+    <string name="bussinessmoneyback_txt">Business MoneyBack</string>
+    <string name="solataire_txt">Solataire</string>
+    <string name="jetprivillage_txt">Jet Privilages</string>
+    <string name="youcanselectmorethan_txt">You can select more than one payment to get relavant offers ....!</string>
+    <string name="heyyouavailable_txt">Hey,you availed HDFC Bank Signature Credit Card offer sometime ago. </string>
+    <string name="rateoffer_txt">Rate Offre</string>
+    <string name="rateapp_txt">Pate App</string>
+    <string name="wouldyoulikefeedback_txt">Would you like to feedback ...?</string>
+    <string name="filteroption_txt">Filter Options</string>
+    <string name="selectfromlistenterdetail_txt">Select from list or enter your details ...</string>
+    <string name="filter_txt">Filter</string>
+    <string name="title_activity_offer_detais">OfferDetaisActivity</string>
+
+    //popup Ewallet
+    <string name="toplistedewallets">Top listed E-Wallets</string>
+    <string name="selectfromtoplistedewallet_txt">Select from top listed E-Wallets.</string>
+    <string name="paytm_txt">Paytm</string>
+    <string name="mobikwik_txt">MobiKwik</string>
+    <string name="freecharge_txt">FreeCharge</string>
+    <string name="M_paisa_txt">M-Pesa</string>
+
+    <string-array name="category_arrays">
+        <item>Elctronics</item>
+        <item>Shopping</item>
+    </string-array>
+
+    <string-array name="subcategory_arrays">
+        <item>Mobiles</item>
+        <item>Mixer</item>
+        <item>Blender</item>
+        <item>Tv</item>
+
+
+    </string-array>
+    <string-array name="banktype_arrays">
+        <item>HDFC Bank</item>
+        <item>ICICI Bank</item>
+        <item>State Bank</item>
+        <item>Axis Bank</item>
+        <item>IDBI Bank</item>
+        <item>CITY Bank</item>
+    </string-array>
+
+    <string-array name="cardtype_arrays">
+        <item>Signature</item>
+        <item>AllMilles</item>
+        <item>Superia</item>
+        <item>Business MoneyBack</item>
+        <item>Solataire</item>
+        <item>Jet Privilages</item>
+    </string-array>
+    <string-array name="compare_arrays">
+        <item>Offer</item>
+        <item>Types</item>
+        <item>Details</item>
+        <item>Terms &amp; Conditions</item>
+    </string-array>
+    //Compare offers
+    <string name="avail_offer_btn_txt">Avail offer</string>
+    <string name="bronze_card_text">Bronze Card</string>
+    <string name="iphone_txt">25% Off on iphone 6s on amazon </string>
+    <string name="iphone7_txt">10% Off on iphone 7s on Flipkart </string>
+    <string name="details_txt">Lorem ipsum dolor sit amet,consectetur adipiscing elit.Etiam lobortis,risus eget posuere fernemtum.</string>
+
+    //Activity offerdetails
+    <string name="offersdetais">Offer Details</string>
+    <string name="iphone7">i phone 7</string>
+    <string name="herearethedetails">Hey are the details of product ...</string>
+    <string name="byusinghdfccreditcard">By using HDFC signature credit card on Amazon</string>
+    <string name="specification">Specifications</string>
+<string name="lornlpsumissimpletext">Lorn Lpsum is simple dummy text of the printing and type setting in dustry.
+Lorn lpsum has been in industrts standard dummy text ever sice 1500s when an unknown printer took a gally of type and scrambled
+it to make a type specimen book.</string>
+    <string name="loremlpsum">Lorem lpsum </string>
+    <string name="availoffer">AVAIL OFFER</string>
+    <string name="relatedoffers">Related offers</string>
+    <string name="hereisrelatedoffers">Here are the Related offers  on product ...</string>
+    <string name="opponew5">Oppo new 5</string>
+    <string name="byusingHDFCcredidcardonamazon">By using HDFC credid card on Amazon ...</string>
+    <string name="Reviews">Reviews</string>
+
+    <string name="knowwhatotherspeoplpesay">Know what others peoplpe say...</string>
+    <string name="title_activity_custom_side_drawer">CustomSideDrawer</string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tab1">Tab1Activity</string>
+    <string name="title_activity_category_list">CategoryListActivity</string>
+    <string name="title_activity_category_detail">CategoryDetailActivity</string>
+    <string name="title_activity_splash">Offers</string>
+    <string name="title_activity_select_payment_options">Select Payment</string>
+    <string name="title_activity_offers_list">" "</string>
+
+</resources>

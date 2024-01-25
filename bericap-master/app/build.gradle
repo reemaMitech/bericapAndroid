@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+    compileSdkVersion 27
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.example.admin.bericapdesign2"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        generatedDensities = []
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+    dexOptions {
+        incremental = true;
+        preDexLibraries = false
+        javaMaxHeapSize "4g" // 2g should be also OK
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    // implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.intuit.sdp:sdp-android:1.0.2'
+    implementation 'com.android.support:multidex:1.0.0'
+    implementation 'com.squareup.okhttp:okhttp:2.2.0'
+    implementation 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
+    implementation 'com.squareup.picasso:picasso:2.4.0'
+    implementation("com.google.android.gms:play-services:11.8.0")
+    implementation("com.google.android.gms:play-services-location:11.8.0")
+//if u are not using location you can skip this
+    implementation("com.google.android.gms:play-services-identity:11.8.0")
+    implementation("com.google.android.gms:play-services-maps:11.8.0")
+    implementation("com.google.android.gms:play-services-gcm:11.8.0")
+
+    implementation 'pub.devrel:easypermissions:0.2.0'
+    implementation 'com.karumi:dexter:4.2.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient-android', version: '4.3.5.1'
+    implementation('org.apache.httpcomponents:httpmime:4.3') {
+        exclude module: "httpclient"
+    }
+}

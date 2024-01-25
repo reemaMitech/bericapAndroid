@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_ll_ads"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/blue_border"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.ecs.library.slider.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                custom:auto_cycle="true"
+                custom:indicator_visibility="visible"
+                custom:pager_animation="Accordion"
+                custom:pager_animation_span="1100"></com.ecs.library.slider.SliderLayout>
+
+            <com.ecs.library.slider.SliderLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="#33000000"
+                custom:auto_cycle="true"
+                custom:indicator_visibility="visible"
+                custom:pager_animation="Accordion"
+                custom:pager_animation_span="1100">
+
+                <AutoCompleteTextView
+                    android:id="@+id/main_actv_serch"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:background="@drawable/search_style"
+                    android:drawableRight="@android:drawable/ic_search_category_default"
+                    android:gravity="center"
+                    android:hint="@string/search_text"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="italic" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/main_actv_serch"/>
+            </com.ecs.library.slider.SliderLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <com.ecs.offers.CustomClasses.CustomTextView
+                    style="@style/contentfont_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="@string/payment_offers_txt"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.ecs.offers.CustomClasses.CustomTextView
+                    style="@style/contentfont_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="@string/fliter_options_by_payment_txt"
+                    android:textSize="@dimen/_8sdp" />
+
+                <com.ecs.offers.CustomClasses.CustomTextView
+                    style="@style/contentfont_textview_style"
+                    android:id="@+id/txt_payment_offer_know_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:gravity="right"
+                    android:text="@string/know_more_txt"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@color/colorWhite"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/iv__slide_leftarrow"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_leftarrow" />
+
+                <ImageView
+                    android:id="@+id/iv__slide_rightarrow"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:src="@drawable/ic_rightarrow"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="#EAEAEA"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.ecs.offers.CustomClasses.CustomTextView
+                    style="@style/contentfont_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="@string/offers_by_category_txt"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.ecs.offers.CustomClasses.CustomTextView
+                    style="@style/contentfont_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="@string/best_offer_txt"
+                    android:textSize="@dimen/_8sdp" />
+
+                <com.ecs.offers.CustomClasses.CustomTextView
+                    style="@style/contentfont_textview_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:gravity="right"
+                    android:text="@string/know_more_txt"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/_8sdp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/category_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp" />
+
+
+                <ImageView
+                    android:id="@+id/catergory_iv__slide_leftarrow"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_leftarrow" />
+
+                <ImageView
+                    android:id="@+id/category_iv__slide_rightarrow"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_rightarrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#EAEAEA"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.ecs.offers.CustomClasses.CustomTextView
+                    style="@style/contentfont_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="@string/trendingdeals_txt"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.ecs.offers.CustomClasses.CustomTextView
+                    style="@style/contentfont_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="@string/big_deals_big_offers_txt"
+                    android:textSize="@dimen/_8sdp" />
+
+                <com.ecs.offers.CustomClasses.CustomTextView
+                    style="@style/contentfont_textview_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:gravity="right"
+                    android:text="@string/know_more_txt"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/_8sdp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/trending_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp" />
+
+
+                <ImageView
+                    android:id="@+id/trending_iv__slide_leftarrow"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_leftarrow" />
+
+                <ImageView
+                    android:id="@+id/trending_iv__slide_rightarrow"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_rightarrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#EAEAEA"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.ecs.offers.CustomClasses.CustomTextView
+                        android:id="@+id/dashboard_tv_cashback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_8sdp"
+                        android:text="@string/cashback_txt"/>
+
+                    <com.ecs.offers.CustomClasses.CustomTextView
+                        android:id="@+id/dashboard_tv_percent_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold"
+                        android:text="UPTO 10%"
+                        android:textColor="@color/colorBlack"/>
+
+                    <com.ecs.offers.CustomClasses.CustomTextView
+                        android:id="@+id/dashboard_tv_icici"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/icci_gold_txt"
+                        android:textSize="@dimen/_8sdp"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.ecs.offers.CustomClasses.CustomTextView
+                        android:id="@+id/dashboard_tv_cashback1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_8sdp"
+                        android:text="@string/cashback_txt"/>
+
+                    <com.ecs.offers.CustomClasses.CustomTextView
+                        android:id="@+id/dashboard_tv_percent_discount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UPTO 50%"
+                        android:textSize="@dimen/_8sdp"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"/>
+
+                    <com.ecs.offers.CustomClasses.CustomTextView
+                        android:id="@+id/dashboard_tv_sbi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold"
+                        android:text="@string/sbi_silver_txt"
+                        android:textColor="@color/colorBlack"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.ecs.offers.CustomClasses.CustomTextView
+                        android:id="@+id/dashboard_tv_cashback2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_8sdp"
+                        android:text="@string/cashback_txt"/>
+
+                    <com.ecs.offers.CustomClasses.CustomTextView
+                        android:id="@+id/dashboard_tv_percent_discount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UPTO 50%"
+                        android:textSize="@dimen/_8sdp"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"/>
+
+                    <com.ecs.offers.CustomClasses.CustomTextView
+                        android:id="@+id/dashboard_tv_hdfc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hdfc_gold_txt"
+                        android:textSize="@dimen/_8sdp"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

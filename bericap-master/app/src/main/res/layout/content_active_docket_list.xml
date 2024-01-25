@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActiveDocketListActivity">
+
+
+    <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+        android:id="@+id/content_doket_tv_activedocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/colorGreen"
+        android:gravity="center"
+        android:padding="@dimen/_4sdp"
+        android:text="Active Dockets"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/content_doket_lv_activedocketlist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_below="@+id/content_doket_tv_activedocket"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:divider="#FFFFFF"
+        android:dividerHeight="@dimen/_2sdp"></ListView>
+
+
+    <com.example.admin.bericapdesign2.CustomClasses.CustomTextView
+        android:id="@+id/adl_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_doket_lv_activedocketlist"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/colorGreen"
+        android:gravity="center"
+        android:padding="@dimen/_4sdp"
+        android:text="Recent Dockets"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/content_doket_lv_recentdocketlist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_below="@+id/adl_tv1"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:divider="#FFFFFF"
+        android:dividerHeight="@dimen/_2sdp"></ListView>
+
+</RelativeLayout>
